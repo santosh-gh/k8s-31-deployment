@@ -16,7 +16,7 @@ spec:
         namespace: flux-system
   values:
     storeFront:
-      replicas: 1
+      replicas: 3
       storeFront:
         image:
           repository: acronlinestoredevuksouth001.azurecr.io/store-front # {"$imagepolicy": "flux-system:store-front-image-policy:name"}

@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
   name: store-front
-  namespace: test
+  namespace: default
 spec:
   interval: 1m
   releaseName: store-front
@@ -16,7 +16,7 @@ spec:
         namespace: flux-system
   values:
     storeFront:
-      replicas: 1
+      replicas: 3
       storeFront:
         image:
           repository: acronlinestoredevuksouth001.azurecr.io/store-front # {"$imagepolicy": "flux-system:store-front-image-policy:name"}
