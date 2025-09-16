@@ -14,3 +14,10 @@ spec:
         kind: HelmRepository
         name: online-store-repo
         namespace: flux-system
+  values:
+    orderService:
+      replicas: 1
+      orderService:
+        image:
+          repository: acronlinestoredevuksouth001.azurecr.io/order # {"$imagepolicy": "flux-system:store-front-image-policy:name"}
+          tag: 1.0.1 # {"$imagepolicy": "flux-system:store-front-image-policy:tag"}
