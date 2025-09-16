@@ -1,0 +1,11 @@
+# flux/images/microservice-a-image-repo.yaml
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: store-front-image-repo
+  namespace: flux-system
+spec:
+  image: acronlinestoredevuksouth001.azurecr.io/store-front
+  interval: 1m
+  secretRef:
+    name: acr-helmchart-secret
