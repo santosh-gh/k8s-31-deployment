@@ -23,4 +23,4 @@ spec:
       branch: main
   update:
     strategy: Setters
-    path: ./clusters/online-store/store-front/
+    path: ./clusters/online-store/dev/store-front/
